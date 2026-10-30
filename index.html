@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Altar de Muertos</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #17121d;
+    color: #f8e8d0;
+    font-family: Arial, sans-serif;
+}
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #26172c;
+    border-bottom: 3px solid #e88b24;
+}
+header h1 {
+    color: #ffbd35;
+    font-size: 38px;
+    margin: 5px;
+}
+header p {
+    color: #f5c9a0;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+main {
+    max-width: 1150px;
+    margin: auto;
+    padding: 15px;
+}
+.portada {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 12px;
+    align-items: center;
+    border-bottom: 2px solid #d96c32;
+    padding-bottom: 15px;
+}
+.informacion {
+    padding: 12px;
+}
+.informacion h2 {
+    color: #ffbd35;
+    font-size: 23px;
+}
+.informacion p {
+    font-size: 12px;
+    line-height: 1.6;
+}
+.imagen-principal {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border: 3px solid #e88b24;
+    border-radius: 5px;
+}
+.niveles {
+    background-color: #54275d;
+    padding: 15px;
+    margin-top: 15px;
+    border-left: 5px solid #ed8d29;
+}
+.niveles h2 {
+    color: #ffcf45;
+    text-align: center;
+}
+.niveles-contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+.nivel {
+    background-color: #392040;
+    padding: 12px;
+    text-align: center;
+    border-radius: 7px;
+}
+.nivel h3 {
+    color: #ffad38;
+}
+.nivel p {
+    font-size: 12px;
+    line-height: 1.5;
+}
+.titulo {
+    text-align: center;
+    color: #ffbd35;
+    font-size: 22px;
+    margin: 25px 0 20px;
+}
+.contenido {
+    max-width: 690px;
+    margin: 0 auto;
+}
+.seccion {
+    background-color: #281d32;
+    border: 1px solid #70416c;
+    padding: 15px;
+    border-radius: 8px;
+}
+.seccion h3 {
+    color: #ff9c35;
+    font-size: 18px;
+    margin: 5px 0 12px;
+}
+.elemento {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px dashed #75516c;
+}
+.icono {
+    width: 55px;
+    height: 55px;
+    background-color: #4d2852;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    flex-shrink: 0;
+}
+.elemento strong {
+    color: #ffd15c;
+    font-size: 14px;
+}
+.elemento p {
+    font-size: 13px;
+    margin: 5px 0;
+    line-height: 1.4;
+}
+.frase {
+    text-align: center;
+    padding: 25px 10px;
+    color: #ffcf45;
+    border-top: 2px solid #b94c3c;
+    margin-top: 20px;
+}
+.frase h2 {
+    font-size: 25px;
+}
+.frase p {
+    font-size: 13px;
+}
+footer {
+    background-color: #26172c;
+    padding: 13px;
+    text-align: center;
+    color: #eebc69;
+    font-size: 12px;
+}
+@media (max-width: 750px) {
+    .portada {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .imagen-principal {
+        grid-column: 1 / -1;
+        grid-row: 1;
+    }
+}
+@media (max-width: 500px) {
+    .portada,
+    .niveles-contenido {
+        grid-template-columns: 1fr;
+    }
+    header h1 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>ALTAR MEXICANO ✿</h1>
+    <p>MÉXICO ES CULTURA, RECUERDOS Y TRADICIÓN</p>
+</header>
+<main>
+    <section class="portada">
+        <div class="informacion">
+            <h2>¿QUÉ ES UN ALTAR?</h2>
+            <p>
+                El altar de muertos es una tradición mexicana
+                dedicada a recordar y honrar a nuestros seres
+                queridos que han fallecido. Se llena de flores,
+                veladoras, comida y fotografías.
+            </p>
+            <h2>¿QUÉ SIGNIFICA?</h2>
+            <p>
+                Representa el amor, la memoria y la unión
+                entre las familias. Cada elemento tiene
+                un significado especial.
+            </p>
+        </div>
+        <img src="./image/altar.jpg"
+alt="Altar mexicano de Día de Muertos"
+class="imagen-principal">
+        <div class="informacion">
+            <h2>SU ORIGEN</h2>
+            <p>
+                Esta celebración reúne tradiciones indígenas
+                de México con costumbres católicas que llegaron
+                durante la época colonial.
+            </p>
+            <h2>¿CUÁNDO SE COLOCA?</h2>
+            <p>
+                Principalmente durante los días 1 y 2 de
+                noviembre, aunque algunas familias comienzan
+                a prepararlo desde días antes.
+            </p>
+        </div>
+    </section>
+    <section class="niveles">
+        <h2>¿CUÁNTOS NIVELES TIENE EL ALTAR?</h2>
+        <div class="niveles-contenido">
+            <div class="nivel">
+                <h3>2 NIVELES</h3>
+                <p>Representan el cielo y la tierra.</p>
+            </div>
+            <div class="nivel">
+                <h3>3 NIVELES</h3>
+                <p>Representan el cielo, la tierra y el inframundo.</p>
+            </div>
+            <div class="nivel">
+                <h3>7 NIVELES</h3>
+                <p>Representan los pasos que debe recorrer el alma para alcanzar el descanso eterno.</p>
+            </div>
+        </div>
+    </section>
+    <h2 class="titulo">
+        ELEMENTOS CLAVE PARA REALIZAR UN ALTAR ✿
+    </h2>
+    <section class="contenido">
+        <div class="seccion">
+            <h3>ELEMENTOS DE LA OFRENDA 🏵️</h3>
+            <div class="elemento">
+                <div class="icono">🌼</div>
+                <div>
+                    <strong>FLOR DE CEMPASÚCHIL</strong>
+                    <p>Su color y aroma guían a las almas hacia la ofrenda.</p>
+                </div>
+            </div>
+            <div class="elemento">
+                <div class="icono">🕯️</div>
+                <div>
+                    <strong>VELADORAS</strong>
+                    <p>Representan la luz que ilumina el camino.</p>
+                </div>
+            </div>
+            <div class="elemento">
+                <div class="icono">🥖</div>
+                <div>
+                    <strong>PAN DE MUERTO</strong>
+                    <p>Es uno de los alimentos más representativos de la celebración.</p>
+                </div>
+            </div>
+            <div class="elemento">
+                <div class="icono">💧</div>
+                <div>
+                    <strong>AGUA</strong>
+                    <p>Se ofrece para calmar la sed de las almas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="frase">
+        <h2>¡AQUÍ EN MÉXICO, RECORDAR ES CELEBRAR!</h2>
+        <p>Una tradición llena de historia, amor y orgullo mexicano.</p>
+    </section>
+</main>
+<footer>
+    <p>ORGULLOSAMENTE HECHO EN MÉXICO 🇲🇽</p>
+</footer>
+</body>
+</html>s
